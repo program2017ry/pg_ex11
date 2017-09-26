@@ -11,7 +11,7 @@ public class SelectGreeting {
 			System.out.print("使い方： java SelectGreeting 番号");
 			System.exit(0);
 		}
-		int num = Integer.parseInt(args[0]);
+		int num = Integer.parseInt(args[0]);	//引数を受け取る
 		if(0 <= num && num < message.length) {
 			System.out.print(message[num]);
 		} else {
