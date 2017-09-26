@@ -15,5 +15,6 @@ public class ExceptionTest5 {
 	static void method2(int x) throws Exception {
 	}
 	static void method3(int x) throws Exception {
+		// test
 	}
 }
