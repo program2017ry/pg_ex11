@@ -15,7 +15,7 @@ public class MakeHtml {
 					System.out.println("<h1>" + line + "</h1>");
 				} else if(line.startsWith("●")){
 					System.out.println("<h2>" + line + "</h2>");
-				} else{
+				} else {
 					System.out.println("<p>" + line + "</p>");
 				}
 				line = reader.readLine();
