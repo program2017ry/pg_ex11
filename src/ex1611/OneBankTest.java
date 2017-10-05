@@ -8,8 +8,8 @@ public class OneBankTest extends Thread {
 	@Override
 	public void run() {
 		while(true) {
-			OneBank.addMoney(100);
-			OneBank.addMoney(-100);
+			bank.addMoney(100);
+			bank.addMoney(-100);
 		}
 	}
 	public static void main(String[] args) {

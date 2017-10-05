@@ -2,7 +2,7 @@ package ex1611;
 
 public class OneBank {
 	private static int value = 0;
-	public static synchronized void addMoney(int money) {
+	public synchronized void addMoney(int money) {
 		int currentValue = value;
 		System.out.println(Thread.currentThread() + "がaddMoneyに入りました。");
 		value += money;
