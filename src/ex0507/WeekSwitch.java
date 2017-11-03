@@ -5,14 +5,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class WeekSwitch {
-	public static void main(String[] args){
+	public static void main(String[] args) {
 		BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 		try {
 			System.out.println("0～6の数字を入力してください。対応した曜日を表示します。");
-//			int suji = new java.util.Scanner(System.in).nextInt();
+			// int suji = new java.util.Scanner(System.in).nextInt();
 			String line = reader.readLine();
 			int suji = Integer.parseInt(line);
-			switch(suji){
+			switch (suji) {
 			case 0:
 				System.out.println("日曜日");
 				break;
@@ -37,11 +37,11 @@ public class WeekSwitch {
 			default:
 				System.out.println("0～6の範囲で数字を入力してください。");
 				break;
-				}
-			} catch (IOException e) {
-				System.out.println(e);
-				} catch (NumberFormatException e) {
-					System.out.println("数字の形式が正しくありません。");
-					}
+			}
+		} catch (IOException e) {
+			System.out.println(e);
+		} catch (NumberFormatException e) {
+			System.out.println("数字の形式が正しくありません。");
+		}
 	}
 }
